@@ -3,6 +3,9 @@ nombre del ‘creador’ de JavaScript?” . Si el usuario teclea “Brendan
 Eich”, entonces muestra en consola: “¡Correcto!, de lo contrario
 muestra: “¿No lo sabes? ¡Brendan Eich!  */
 
+
+
+
 /* Creando la pregunta inicial a traves de una ventana de introduccion de texto donde el usuario ingresara su respuesta */
 let respuesta = prompt("¿Cuál es el nombre del ‘creador’ de JavaScript?");
 
@@ -13,3 +16,4 @@ if (respuesta === "Brendan Eich") {
 } else {
     console.log("¿No lo sabes? ¡Brendan Eich!");
 }
+
