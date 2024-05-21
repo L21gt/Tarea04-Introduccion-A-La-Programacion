@@ -28,10 +28,14 @@ function calcularTotal(precio1, precio2, precio3, impuesto) {
   console.log('Precio plato 3: '+precio3);
   const impuesto = parseFloat(prompt("Ingrese el porcentaje de impuesto:"));
   console.log('Impuesto aplicable: '+impuesto+'%');
+
+  // opcional, este codigo solamente es para mostrar un subtotal parcial en la consola antes de llamar la funcion
+  const subtotal = precio1 + precio2 + precio3;
+  console.log("El subtotal es: "+subtotal);
   
   // Calcular el total de la factura llamando a la función
   const totalFactura = calcularTotal(precio1, precio2, precio3, impuesto);
   
-  // Mostrar el total de la factura utilizando alert()
-  //alert(`El monto total de la factura es: $${totalFactura.toFixed(2)}`);
-  alert(`El monto total de la factura es: `+totalFactura);
+  // Mostrar el total de la factura utilizando alert() agregando el atributo .toFixed para mostrar decimales
+  alert(`El monto total de la factura es: $${totalFactura.toFixed(2)}`);
+  //alert(`El monto total de la factura es: `+totalFactura);
